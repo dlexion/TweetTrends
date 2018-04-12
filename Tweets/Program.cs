@@ -10,6 +10,13 @@ namespace Tweets
     {
         static void Main(string[] args)
         {
+            List<Tweet> tweets = TweetsReader.Read(@"D:\PS3_TweetTrens\trends\data\my_job.txt");
+            Console.WriteLine(tweets.Count);
+            foreach (var tweet in tweets)
+            {
+                Console.WriteLine(tweet);
+            }
+            Console.ReadKey();
         }
     }
 }
