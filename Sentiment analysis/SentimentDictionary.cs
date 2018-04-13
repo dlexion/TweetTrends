@@ -53,5 +53,17 @@ namespace Sentiment_analysis
         {
             return dictionary.ContainsKey(key);
         }
+
+        public double? GetValue(string key)
+        {
+            try
+            {
+                return dictionary[key];
+            }
+            catch
+            {
+                return null;
+            }
+        }
     }
 }
