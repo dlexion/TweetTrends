@@ -53,14 +53,14 @@ namespace Sentiment_analysis
                                 {
                                     temp = dictionary.GetValue(key);
                                 }
-                                sw.WriteLine("1111{0} : {1}", key, temp == null ? "not fount" : temp.ToString());
+                                sw.WriteLine("{0} : {1}", key, temp == null ? "not fount" : temp.ToString());
                                 count++;
                                 key += " " + sentence.Words[++i].Wd.ToLower();
                                 sw.WriteLine("Add word: {0}", sentence.Words[i].Wd.ToLower());
                             }
                             else
                             {
-                                sw.WriteLine("!!!!!!{0} : {1}", key, "not found");
+                                sw.WriteLine("{0} : {1}", key, "not found");
                                 if (temp != null)
                                 {
                                     result += temp;
@@ -72,7 +72,6 @@ namespace Sentiment_analysis
 
                                 i -= count;
                                 count = 0;
-                                //sw.WriteLine("{0} : {1}", key, temp);
                                 break;
                             }
                         }
