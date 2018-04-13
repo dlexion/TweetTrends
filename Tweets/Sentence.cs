@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tweets
 {
-    class Sentence : IComparable<Sentence>
+    public class Sentence : IComparable<Sentence>
     {
         private List<Word> words;
 

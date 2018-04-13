@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tweets
 {
-    class Text
+    public class Text
     {
         private List<Sentence> sentences;
 

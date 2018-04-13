@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Tweets
 {
-    class TweetsReader
+    public class TweetsReader
     {
         static public List<Tweet> Read(string path)
         {

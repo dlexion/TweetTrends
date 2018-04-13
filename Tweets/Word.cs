@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tweets
 {
-    class Word
+    public class Word
     {
         public String Wd { get; set; }
         public char? Mark { get; set; }

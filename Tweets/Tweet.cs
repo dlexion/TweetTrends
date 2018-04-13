@@ -7,11 +7,13 @@ using System.Threading.Tasks;
 
 namespace Tweets
 {
-    class Tweet
+    public class Tweet
     {
         PointF point;
         DateTime date;
         Text message;
+
+        public Text Message { get => message; }
 
         public Tweet(PointF point, DateTime dateTime, Text text)
         {
